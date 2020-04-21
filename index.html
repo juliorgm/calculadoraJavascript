@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Calculadora JavaScript</h1>
+        <div class="row">
+            <div class="col-sm">
+                <form action="" >
+                    <input type="text" class="form-control display" id="secondary-display"> 
+                    <input type="text" class="form-control display" id="primary-display"> 
+                    <div class="row">
+                        <input type="button" value="C"  class="botao btn btn-dark" onclick="eraseAll();">
+                        <input type="button" value="<-" class="botao btn btn-dark" onclick="eraselastNumber();">
+                        <input type="button" value="%"  class="botao btn btn-dark" onclick="getOperation('%');">
+                        <input type="button" value="/"  class="botao btn btn-dark" onclick="getOperation('/');">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="7"  class="botao btn btn-dark" onclick='getNumber(7);'>
+                        <input type="button" value="8" class="botao btn btn-dark" onclick='getNumber(8);'>
+                        <input type="button" value="9"  class="botao btn btn-dark" onclick='getNumber(9);'>
+                        <input type="button" value="*"  class="botao btn btn-dark" onclick="getOperation('*');">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="4"  class="botao btn btn-dark" onclick='getNumber(4);'>
+                        <input type="button" value="5" class="botao btn btn-dark" onclick='getNumber(5);'>
+                        <input type="button" value="6"  class="botao btn btn-dark" onclick='getNumber(6);'>
+                        <input type="button" value="-"  class="botao btn btn-dark" onclick="getOperation('-');">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="1"  class="botao btn btn-dark" onclick='getNumber(1);'>
+                        <input type="button" value="2" class="botao btn btn-dark" onclick='getNumber(2);'>
+                        <input type="button" value="3"  class="botao btn btn-dark" onclick='getNumber(3);'>
+                        <input type="button" value="+"  class="botao btn btn-dark" onclick="getOperation('+');">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="0"  class="botao btn btn-dark" onclick='getNumber(0);'>
+                        <input type="button" value="00" class="botao btn btn-dark" onclick='getNumber(00);'>
+                        <input type="button" value="."  class="botao btn btn-dark" onclick='putDecimal();'>
+                        <input type="button" value="="  class="botao btn btn-dark" onclick='calculate();'>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm">
+                <p>Olá, estou criando esse miniprojeto para aprender javascript</p>
+            </div>  
+        </div>
+
+    </div>
+
+    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+    <script src="code.js"></script>
+  </body>
+</html>

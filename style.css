@@ -1,0 +1,24 @@
+form{
+    background-color: red;
+    padding: 10px;
+}
+
+#primary-display{
+    font-size: 28px;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+#secondary-display{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 0;
+}
+
+
+.botao{
+    width: 21.3%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    border: 0;
+}
